@@ -22,3 +22,16 @@ ChatGPT on Slack!
 ```sh
   $ yarn stop
 ```
+
+Or you can use docker-compose to run the app.
+1. Set environment variables in the `.env` file.
+```
+  SLACK_SIGNING_SECRET=
+  SLACK_BOT_TOKEN=
+  SLACK_APP_TOKEN=
+  CHATGPT_API_KEY=
+```
+2. Run the app with docker-compose.
+```sh
+  $ docker-compose up -d
+```

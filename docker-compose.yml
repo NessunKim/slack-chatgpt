@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+  slack-chatgpt:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file: ./.env
+    volumes:
+      - ./sessions.txt:/app/sessions.txt
