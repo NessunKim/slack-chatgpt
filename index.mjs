@@ -19,7 +19,18 @@ const api = new ChatGPTAPI({
 });
 
 async function startNewSession(channel, tsOrThreadTs, receivedText) {
-  const res = await api.sendMessage(receivedText);
+  let res;
+  try {
+    res = await api.sendMessage(receivedText);
+  } catch (e) {
+    console.log(e);
+    await app.client.chat.postMessage({
+      channel: channel,
+      thread_ts: tsOrThreadTs,
+      text: e.message,
+    });
+    return;
+  }
   await appendFile(
     SESSION_FILE,
     `${channel} ${tsOrThreadTs} ${res.conversationId} ${res.id}\n`
@@ -45,10 +56,21 @@ async function findExistingSession(channel, threadTs) {
 }
 
 async function followUp(channel, threadTs, conversationId, parentMessageId, receivedText) {
-  const res = await api.sendMessage(receivedText, {
-    conversationId,
-    parentMessageId,
-  });
+  let res;
+  try {
+    res = await api.sendMessage(receivedText, {
+      conversationId,
+      parentMessageId,
+    });
+  } catch (e) {
+    console.log(e);
+    await app.client.chat.postMessage({
+      channel,
+      thread_ts: threadTs,
+      text: e.message,
+    });
+    return;
+  }
   const sessions = await readFile(SESSION_FILE, "utf-8");
   await writeFile(
     SESSION_FILE,
