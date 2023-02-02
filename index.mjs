@@ -83,5 +83,5 @@ app.event("message", async ({ event }) => {
   await followUp(channel, ts, conversationId, id, event.text);
 });
 
-await app.start(process.env.PORT || 3000);
+await app.start();
 console.log("Slack ChatGPT bot is running!");
