@@ -9,7 +9,7 @@
   "packageManager": "yarn@3.4.1",
   "dependencies": {
     "@slack/bolt": "^3.12.2",
-    "chatgpt": "^4.0.3",
+    "chatgpt": "^4.1.0",
     "dotenv": "^16.0.3"
   }
 }
