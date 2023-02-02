@@ -2,7 +2,9 @@
   "name": "slack-chatgpt",
   "type": "module",
   "scripts": {
-    "start": "node index.mjs"
+    "start": "node index.mjs",
+    "daemon": "npx pm2 start index.mjs --name slack-chatgpt",
+    "stop": "npx pm2 stop slack-chatgpt"
   },
   "packageManager": "yarn@3.4.1",
   "dependencies": {

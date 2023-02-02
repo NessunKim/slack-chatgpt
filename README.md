@@ -13,6 +13,12 @@ ChatGPT on Slack!
   CHATGPT_API_KEY=
 ```
 4. Run the app.
-```
+```sh
   $ yarn start
+  # or run in daemon mode
+  $ yarn daemon
+```
+5. To stop the daemon, run
+```sh
+  $ yarn stop
 ```
