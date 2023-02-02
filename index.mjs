@@ -2,6 +2,9 @@ import "dotenv/config";
 import { ChatGPTAPI } from "chatgpt";
 import bolt from "@slack/bolt";
 import { appendFile, readFile, writeFile } from "fs/promises";
+import { join } from "path";
+
+const SESSION_FILE = join("data", "sessions.txt");
 
 const app = new bolt.App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -18,7 +21,7 @@ const api = new ChatGPTAPI({
 async function startNewSession(channel, tsOrThreadTs, receivedText) {
   const res = await api.sendMessage(receivedText);
   await appendFile(
-    "sessions.txt",
+    SESSION_FILE,
     `${channel} ${tsOrThreadTs} ${res.conversationId} ${res.id}\n`
   );
   console.log(`Created session: ${channel} ${tsOrThreadTs} ${res.conversationId} ${res.id}`);
@@ -31,7 +34,7 @@ async function startNewSession(channel, tsOrThreadTs, receivedText) {
 }
 
 async function findExistingSession(channel, threadTs) {
-  const sessions = await readFile("sessions.txt", "utf-8");
+  const sessions = await readFile(SESSION_FILE, "utf-8");
   const session = sessions.split("\n").find((session) => {
     const [channelHere, threadTsHere] = session.split(" ");
     return channel === channelHere && threadTs === threadTsHere;
@@ -46,9 +49,9 @@ async function followUp(channel, threadTs, conversationId, parentMessageId, rece
     conversationId,
     parentMessageId,
   });
-  const sessions = await readFile("sessions.txt", "utf-8");
+  const sessions = await readFile(SESSION_FILE, "utf-8");
   await writeFile(
-    "sessions.txt",
+    SESSION_FILE,
     sessions.replace(
       `${channel} ${threadTs} ${res.conversationId} ${parentMessageId}\n`,
       `${channel} ${threadTs} ${res.conversationId} ${res.id}\n`
