@@ -1,7 +1,7 @@
 # Slack ChatGPT
 ChatGPT on Slack!
 
-## Usage
+## Installation
 
 1. Create a Slack App and install it to your workspace. You can use `manifest.yml` to create the app.
 2. Get an API key from [here](https://platform.openai.com/account/api-keys).
@@ -34,4 +34,21 @@ Or you can use docker-compose to run the app.
 2. Run the app with docker-compose.
 ```sh
   $ docker-compose up -d
+```
+
+## Usage
+
+Mention the bot to start a conversation.
+```
+  @ChatGPT How are you?
+```
+
+The bot will add a response to the thread.
+```
+  I'm doing well, thank you.
+```
+
+Then you can continue the conversation.
+```
+  What's your favorite color?
 ```
