@@ -15,7 +15,7 @@ const app = new bolt.App({
 });
 
 const api = new ChatGPTAPI({
-  apiKey: process.env.CHATGPT_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 async function startNewSession(channel, tsOrThreadTs, receivedText) {

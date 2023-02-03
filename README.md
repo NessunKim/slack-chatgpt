@@ -10,7 +10,7 @@ ChatGPT on Slack!
   SLACK_SIGNING_SECRET=
   SLACK_BOT_TOKEN=
   SLACK_APP_TOKEN=
-  CHATGPT_API_KEY=
+  OPENAI_API_KEY=
 ```
 4. Run the app.
 ```sh
@@ -29,7 +29,7 @@ Or you can use docker-compose to run the app.
   SLACK_SIGNING_SECRET=
   SLACK_BOT_TOKEN=
   SLACK_APP_TOKEN=
-  CHATGPT_API_KEY=
+  OPENAI_API_KEY=
 ```
 2. Run the app with docker-compose.
 ```sh
