@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@slack/bolt", "npm:3.12.2"],\
-            ["chatgpt", "npm:4.1.0"],\
+            ["chatgpt", "npm:4.1.3"],\
             ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "SOFT"\
@@ -420,10 +420,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chatgpt", [\
-        ["npm:4.1.0", {\
-          "packageLocation": "./.yarn/cache/chatgpt-npm-4.1.0-48d22d9fb8-73e96dadec.zip/node_modules/chatgpt/",\
+        ["npm:4.1.3", {\
+          "packageLocation": "./.yarn/cache/chatgpt-npm-4.1.3-7053e13ad7-95f488d4f9.zip/node_modules/chatgpt/",\
           "packageDependencies": [\
-            ["chatgpt", "npm:4.1.0"],\
+            ["chatgpt", "npm:4.1.3"],\
             ["eventsource-parser", "npm:0.0.5"],\
             ["gpt-3-encoder", "npm:1.1.4"],\
             ["keyv", "npm:4.5.2"],\
@@ -1753,7 +1753,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["slack-chatgpt", "workspace:."],\
             ["@slack/bolt", "npm:3.12.2"],\
-            ["chatgpt", "npm:4.1.0"],\
+            ["chatgpt", "npm:4.1.3"],\
             ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "SOFT"\

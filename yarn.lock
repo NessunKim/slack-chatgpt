@@ -344,9 +344,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chatgpt@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "chatgpt@npm:4.1.0"
+"chatgpt@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "chatgpt@npm:4.1.3"
   dependencies:
     eventsource-parser: ^0.0.5
     gpt-3-encoder: ^1.1.4
@@ -354,7 +354,7 @@ __metadata:
     p-timeout: ^6.0.0
     quick-lru: ^6.1.1
     uuid: ^9.0.0
-  checksum: 73e96dadecd23f49fb4729f08e5f2a66b3525a71a1aac4927fb5fa93044b356efbc25c559eeb7762383ae995acdce4b2eeeb1372c25eaded4df0b627072517d2
+  checksum: 95f488d4f9a21a98c7b6e459911a07e71298e50814b95e2d6a772bb63cb39765a5280a48587584b7fee2e60f0b8df5a2666719aa1e999cc49aa32dec71b0ea01
   languageName: node
   linkType: hard
 
@@ -1485,7 +1485,7 @@ __metadata:
   resolution: "slack-chatgpt@workspace:."
   dependencies:
     "@slack/bolt": ^3.12.2
-    chatgpt: ^4.1.0
+    chatgpt: ^4.1.3
     dotenv: ^16.0.3
   languageName: unknown
   linkType: soft
