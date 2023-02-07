@@ -114,7 +114,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express-serve-static-core@npm:^4.17.31":
+"@types/express-serve-static-core@npm:^4.17.33":
   version: 4.17.33
   resolution: "@types/express-serve-static-core@npm:4.17.33"
   dependencies:
@@ -126,14 +126,14 @@ __metadata:
   linkType: hard
 
 "@types/express@npm:^4.16.1":
-  version: 4.17.16
-  resolution: "@types/express@npm:4.17.16"
+  version: 4.17.17
+  resolution: "@types/express@npm:4.17.17"
   dependencies:
     "@types/body-parser": "*"
-    "@types/express-serve-static-core": ^4.17.31
+    "@types/express-serve-static-core": ^4.17.33
     "@types/qs": "*"
     "@types/serve-static": "*"
-  checksum: 43f3ed2cea6e5e83c7c1098c5152f644e975fd764443717ff9c812a1518416a9e7e9f824ffe852c118888cbfb994ed023cad08331f49b19ced469bb185cdd5cd
+  checksum: 0196dacc275ac3ce89d7364885cb08e7fb61f53ca101f65886dbf1daf9b7eb05c0943e2e4bbd01b0cc5e50f37e0eea7e4cbe97d0304094411ac73e1b7998f4da
   languageName: node
   linkType: hard
 
@@ -162,14 +162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=12.0.0":
-  version: 18.11.18
-  resolution: "@types/node@npm:18.11.18"
-  checksum: 03f17f9480f8d775c8a72da5ea7e9383db5f6d85aa5fefde90dd953a1449bd5e4ffde376f139da4f3744b4c83942166d2a7603969a6f8ea826edfb16e6e3b49d
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:18.11.8":
+"@types/node@npm:*, @types/node@npm:18.11.8, @types/node@npm:>=12, @types/node@npm:>=12.0.0":
   version: 18.11.8
   resolution: "@types/node@npm:18.11.8"
   checksum: 60b358f97c1a029722dc785811b217615ef20249c3fbde60a65869cfd7a5cd5b1872ee95c79c187ef70e5a078f4ac7670d2129803985268b1f021ad6e8040af8
@@ -344,9 +337,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chatgpt@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "chatgpt@npm:4.1.0"
+"chatgpt@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "chatgpt@npm:4.1.3"
   dependencies:
     eventsource-parser: ^0.0.5
     gpt-3-encoder: ^1.1.4
@@ -354,7 +347,7 @@ __metadata:
     p-timeout: ^6.0.0
     quick-lru: ^6.1.1
     uuid: ^9.0.0
-  checksum: 73e96dadecd23f49fb4729f08e5f2a66b3525a71a1aac4927fb5fa93044b356efbc25c559eeb7762383ae995acdce4b2eeeb1372c25eaded4df0b627072517d2
+  checksum: 95f488d4f9a21a98c7b6e459911a07e71298e50814b95e2d6a772bb63cb39765a5280a48587584b7fee2e60f0b8df5a2666719aa1e999cc49aa32dec71b0ea01
   languageName: node
   linkType: hard
 
@@ -1485,7 +1478,7 @@ __metadata:
   resolution: "slack-chatgpt@workspace:."
   dependencies:
     "@slack/bolt": ^3.12.2
-    chatgpt: ^4.1.0
+    chatgpt: ^4.1.3
     dotenv: ^16.0.3
   languageName: unknown
   linkType: soft
