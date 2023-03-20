@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@slack/bolt", "npm:3.12.2"],\
-            ["chatgpt", "npm:5.0.8"],\
+            ["chatgpt", "npm:5.1.2"],\
             ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "SOFT"\
@@ -67,10 +67,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@dqbd/tiktoken", [\
-        ["npm:0.4.0", {\
-          "packageLocation": "./.yarn/cache/@dqbd-tiktoken-npm-0.4.0-63e4937919-2d708e70b8.zip/node_modules/@dqbd/tiktoken/",\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/@dqbd-tiktoken-npm-1.0.2-9b5e334507-626c499723.zip/node_modules/@dqbd/tiktoken/",\
           "packageDependencies": [\
-            ["@dqbd/tiktoken", "npm:0.4.0"]\
+            ["@dqbd/tiktoken", "npm:1.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -546,11 +546,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chatgpt", [\
-        ["npm:5.0.8", {\
-          "packageLocation": "./.yarn/cache/chatgpt-npm-5.0.8-529ffa4775-08e04db6ab.zip/node_modules/chatgpt/",\
+        ["npm:5.1.2", {\
+          "packageLocation": "./.yarn/cache/chatgpt-npm-5.1.2-d46137841e-be7f204693.zip/node_modules/chatgpt/",\
           "packageDependencies": [\
-            ["chatgpt", "npm:5.0.8"],\
-            ["@dqbd/tiktoken", "npm:0.4.0"],\
+            ["chatgpt", "npm:5.1.2"],\
+            ["@dqbd/tiktoken", "npm:1.0.2"],\
             ["cac", "npm:6.7.14"],\
             ["conf", "npm:11.0.1"],\
             ["eventsource-parser", "npm:0.0.5"],\
@@ -2177,7 +2177,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["slack-chatgpt", "workspace:."],\
             ["@slack/bolt", "npm:3.12.2"],\
-            ["chatgpt", "npm:5.0.8"],\
+            ["chatgpt", "npm:5.1.2"],\
             ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "SOFT"\
